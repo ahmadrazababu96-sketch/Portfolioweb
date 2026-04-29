@@ -1,10 +1,12 @@
 import React from 'react'
-
+import Projecthero from '@/components/Projecthero'
+import Projectcollection from '@/components/Projectcollection'
 const page = () => {
   return (
     <>
     
-    <h1 className='text-black text-4xl font-bold'>Thius is project page </h1>
+   <Projecthero/>
+   <Projectcollection/>
     
     </>
   )
