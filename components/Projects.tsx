@@ -27,7 +27,7 @@ const Projects = () => {
             btn1:"Live",
             btn2:"Github",
         },
-    ]
+    ];
 
 
 
