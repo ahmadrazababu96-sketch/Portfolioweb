@@ -20,7 +20,7 @@ const Navbar = () => {
     <div className="hidden md:flex items-center gap-8 text-gray-700 font-medium">
       <Link href={"/"}>Home</Link>
       <Link href={"/projects"}>Project</Link>
-      <Link href={"/"}>About</Link>
+      <Link href={"/about"}>About</Link>
       <Link href={"/"}>Contact</Link>
     </div>
 
