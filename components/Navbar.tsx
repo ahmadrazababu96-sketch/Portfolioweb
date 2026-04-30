@@ -11,9 +11,11 @@ const Navbar = () => {
     <nav className="w-full sticky top-2 z-50 shadow-[#F4F2FE]">
   <div className="max-w-6xl mx-auto h-16 bg-white shadow-md flex items-center justify-between px-4 md:px-6 lg:px-8 rounded-full">
     
+   <Link href={"/"}>
     <div className="text-2xl font-bold text-black">
       PortFolio
     </div>
+   </Link>
 
     <div className="hidden md:flex items-center gap-8 text-gray-700 font-medium">
       <Link href={"/"}>Home</Link>
