@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { Mail,Phone,Share2,Globe,FileCodeCorner,ArrowBigRight } from 'lucide-react'
-const Contacthero = () => {
+const  Contacthero = () => {
   return (
     <>
     <section className='w-full px-6 py-16 '>
