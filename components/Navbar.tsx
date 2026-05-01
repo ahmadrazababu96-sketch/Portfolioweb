@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import {Menu,X} from "lucide-react"
 import React, { useState } from 'react'
-import Login from './Login';
+import login from '../app/login/page';
 
 const Navbar = () => {
     const [open,Setopen]=useState(false);
@@ -39,14 +39,19 @@ const Navbar = () => {
 
        { open&&(
         <div className='absolute top-16 left-0 w-full bg-white shadow-lg flex flex-col gap-6 py-6 items-center 
-        md:hidden text-black'>
+        md:hidden text-black w-full'>
 
        <Link href={"/"} onClick={()=>Setopen(false)}>Home</Link>
        <Link href={"/projects"} onClick={()=>Setopen(false)}>Project</Link>
        <Link href={"/about"} onClick={()=>Setopen(false)}>About</Link>
        <Link href={"/contact"} onClick={()=>Setopen(false)}>Contact</Link>
-        <button className='bg-black text-white px-5 py-2 rounded-full
-        hover:bg-gray-800 transition w-full'>Login</button>
+        <Link href={"/login"} onClick={()=>Setopen(false)}>
+      <div className="w-full">
+  <button className="bg-black text-white px-5 py-2 rounded-full hover:bg-gray-800 transition w-full">
+    Login
+  </button>
+</div>
+        </Link>
       </div>
        )}
 
