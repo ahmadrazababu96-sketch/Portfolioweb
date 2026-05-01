@@ -1,7 +1,7 @@
 
 
 import React from 'react'
-import { Mail,Phone,Share2,Globe,FileCodeCorner } from 'lucide-react'
+import { Mail,Phone,Share2,Globe,FileCodeCorner,ArrowBigRight } from 'lucide-react'
 const Contacthero = () => {
   return (
     <>
@@ -69,49 +69,50 @@ const Contacthero = () => {
             />
                       </div>
            </div>
-           <div className="p-6 rounded-xl shadow-md border bg-white">
+           <div className="p-6 rounded-xl shadow-md  border bg-white">
           <form className="space-y-4">
             <div>
-              <label className="block mb-1 font-medium">Name</label>
+              <label className="block mb-1 text-black font-medium">Name</label>
               <input
                 type="text"
                 placeholder="Your Name"
-                className="w-full border p-3 rounded-md"
+                className="w-full  p-3  text-[#737C8C] rounded-md bg-[#F2F3FF]"
               />
             </div>
 
             <div>
-              <label className="block mb-1 font-medium">Email</label>
+              <label className="block mb-1 text-black font-medium">Email</label>
               <input
                 type="email"
                 placeholder="Your Email"
-                className="w-full border p-3 rounded-md"
+                className="w-full  p-3  text-[#737C8C] rounded-md bg-[#F2F3FF]"
               />
             </div>
 
             <div>
-              <label className="block mb-1 font-medium">Subject</label>
+              <label className="block mb-1 text-black font-medium">Subject</label>
               <input
                 type="text"
                 placeholder="Subject"
-                className="w-full border p-3 rounded-md"
+                className="w-full  p-3  text-[#737C8C] rounded-md bg-[#F2F3FF]"
               />
             </div>
 
             <div>
-              <label className="block mb-1 font-medium">Message</label>
+              <label className="block mb-1 text-black font-medium">Message</label>
               <textarea
-                rows='5'
+                rows={5}
                 placeholder="Your Message"
-                className="w-full border p-3 rounded-md"
+                className="w-full  p-3  text-[#737C8C] rounded-md bg-[#F2F3FF]"
               ></textarea>
             </div>
 
             <button
               type="submit"
-              className="bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800"
+              className="bg-[#4648D4] cursor-pointer text-white px-6 py-3 rounded-md
+               hover:bg-gray-800 flex items-center gap-2"
             >
-              Send Message
+              Send Message <span><ArrowBigRight className=''  size={22} /></span>
             </button>
           </form>
         </div>

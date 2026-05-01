@@ -23,8 +23,11 @@ const Abouthero = () => {
     return (
     <>
     
-     <div className="flex flex-col md:flex-row items-center justify-center gap-5 py-16 mx-auto max-w-6xl">
-        <div className='flex-1 flex justify-center flex-col space-y-6 '>
+     <div className="flex flex-col md:flex-row items-center justify-center gap-5 py-16 
+     mx-auto max-w-6xl">
+        <div className='flex-1 flex flex-col justify-center space-y-6 
+text-center md:text-left items-center md:items-start
+px-4 md:px-0'>
             
              <p className='text-[#8182E2] tracking-widest
              text-sm font-medium'>THE ARCHITECT</p>
@@ -36,15 +39,19 @@ const Abouthero = () => {
                <p className='text-gray-400 leading-relaxed max-w-xl'>
                 I am a Senior Software Engineer specializing in building 
                 scalable distributed systems and high-performance front-end architectures.
-                 With over 8 years of experience, I bridge the gap between complex backend logic and intuitive user
+                 With over 8 years of experience, I bridge the gap between complex backend 
+                 logic and intuitive user
                   interface design.
                </p> 
                <div className='flex gap-4 pt-4'>
-                    <button className="bg-[#8182E2] text-white px-6 py-2 rounded-lg hover:scale-105 transition">
+                    <button className="bg-[#8182E2] text-white px-6 py-2 rounded-lg 
+                    hover:scale-105
+                     transition">
       View Projects
     </button>
 
-    <button className="border border-[#8182E2] text-[#8182E2] px-6 py-2 rounded-lg hover:bg-[#8182E2] hover:text-white transition">
+    <button className="border border-[#8182E2] text-[#8182E2] px-6 py-2 rounded-lg
+     hover:bg-[#8182E2] hover:text-white transition">
       Contact Me
     </button>
                </div>
@@ -54,8 +61,8 @@ const Abouthero = () => {
         <div className='flex-1 relative  '>
 
              
-   <div className="h-130 w-100 bg-[#1F2931] rounded-xl flex flex-col items-center justify-center text-white">
-
+  <div className="h-130 w-100 bg-[#1F2931] rounded-xl flex flex-col items-center justify-center
+   text-white mx-auto px-4">
   {!file ? (
     <>
       <h2 className="text-xl font-bold mb-4">Upload Your CV</h2>

@@ -93,44 +93,38 @@ const Aboutcontent = () => {
 
 
     </div>
-   <div className="bg-[#030712] text-white mx-20 flex rounded-2xl py-20 px-10">
+ <div className="bg-[#030712] text-white mx-4 md:mx-20 flex flex-col rounded-2xl py-20 px-6 md:px-10">
 
-  {/* 🔹 Top Center Content */}
-<div className="max-w-2xl mx-auto mb-12">
-  
-  <h1 className="text-3xl md:text-4xl font-bold mb-4 text-left">
-    Academic Foundation
-  </h1>
+  {/* Top Content */}
+  <div className="max-w-2xl mx-auto mb-12 text-center md:text-left">
+    <h1 className="text-3xl md:text-4xl font-bold mb-4">
+      Academic Foundation
+    </h1>
 
-  <p className="text-gray-300 font-medium text-left">
-    Combining rigorous computer science theory with practical creative application.
-  </p>
+    <p className="text-gray-300 font-medium">
+      Combining rigorous computer science theory with practical creative application.
+    </p>
+  </div>
 
-</div>
+  {/* Bottom Items */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
 
-  {/* 🔹 Bottom Two Items */}
-  <div className="flex flex-col  md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-
-    {/* Item 1 */}
     <div className="flex gap-4 items-start">
       <div className="text-[#8182E2] text-xl">
         <GraduationCap />
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold">
-          BS Computer Science
-        </h3>
+        <h3 className="text-lg font-semibold">BS Computer Science</h3>
         <p className="text-gray-400 text-sm">
           University of Engineering & Technology
         </p>
       </div>
     </div>
 
-    {/* Item 2 */}
     <div className="flex gap-4 items-start">
       <div className="text-[#8182E2] text-xl">
-     <Medal />
+        <Medal />
       </div>
 
       <div>

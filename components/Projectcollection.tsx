@@ -128,7 +128,7 @@ const Projectcollection = () => {
             ))}
                       </div>
            {/* cards */}
-                        <div className='grid grid-cols-1 md:grid-cols-3 gap-6 '>
+                       <div className='grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-0'>
                              {filterprojects.map((item) => (
                                <div
                                    key={item.id}

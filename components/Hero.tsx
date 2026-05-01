@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react'
-
+import Link from 'next/link';
 const Hero = () => {
   return (
     <>
@@ -21,8 +21,11 @@ const Hero = () => {
 </p>
 
   <div className='flex gap-7  items-center justify-center mt-10'>
-     <button className='bg-[#AB49A5] rounded-full h-12 w-30 text-black'>Get Started</button>
-     <button className='bg-[#FAF8FF]  text-[#BF6B28] border-[#B8A8BF] border-2 rounded-full h-12 w-30'>View Projects</button>
+    <Link href={"/contact"} >
+     <button className='bg-[#AB49A5] cursor-pointer rounded-full h-12 w-30 text-black'>Get Started</button></Link>
+    <Link href={"/projects"}>
+     <button className='bg-[#FAF8FF]  cursor-pointer text-[#BF6B28] border-[#B8A8BF] border-2 rounded-full h-12 w-30'>View Projects</button>
+    </Link>
   </div>
 
  </div>

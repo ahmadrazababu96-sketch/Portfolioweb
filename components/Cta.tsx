@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link'
 const Cta = () => {
   return (
     <>
@@ -11,9 +11,11 @@ const Cta = () => {
          <p className="text-gray-600 mt-4 text-sm md:text-base max-w-2xl mx-auto">
           Start building your professional presence and connect with top-tier talent from around the globe.
         </p>
-        <button className="mt-8 bg-[#001A33] text-white px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition">
+        <Link  href={"/contact"}>
+        <button className="mt-8 bg-[#001A33] cursor-pointer hover:text-black text-white px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition">
           Get Started
         </button>
+        </Link>
       </div>
     </div>
     </>

@@ -2,13 +2,14 @@
 import Link from 'next/link';
 import {Menu,X} from "lucide-react"
 import React, { useState } from 'react'
+import Login from './Login';
 
 const Navbar = () => {
     const [open,Setopen]=useState(false);
   return (
     <>
     
-    <nav className="w-full sticky top-2 z-50 shadow-[#F4F2FE]">
+    <nav className="w-full relative sticky top-2 z-50  shadow-[#F4F2FE]">
   <div className="max-w-6xl mx-auto h-16 bg-white shadow-md flex items-center justify-between px-4 md:px-6 lg:px-8 rounded-full">
     
    <Link href={"/"}>
@@ -24,9 +25,12 @@ const Navbar = () => {
       <Link href={"/contact"}>Contact</Link>
     </div>
 
-    <button className="bg-[#E040A0] text-white px-5 py-2 rounded-full hidden md:block hover:bg-gray-800 transition">
+    <Link href={"/login"}>
+     <button className="bg-[#E040A0] text-white px-5 py-2 rounded-full hidden md:block
+      cursor-pointer  hover:bg-gray-800 transition">
       Login
     </button>
+    </Link>
 
       <button onClick={ ()=>Setopen(!open)} className='md:hidden text-black '>
 
@@ -38,9 +42,9 @@ const Navbar = () => {
         md:hidden text-black'>
 
        <Link href={"/"} onClick={()=>Setopen(false)}>Home</Link>
-       <Link href={"/"} onClick={()=>Setopen(false)}>Project</Link>
-       <Link href={"/"} onClick={()=>Setopen(false)}>About</Link>
-       <Link href={"/"} onClick={()=>Setopen(false)}>Contact</Link>
+       <Link href={"/projects"} onClick={()=>Setopen(false)}>Project</Link>
+       <Link href={"/about"} onClick={()=>Setopen(false)}>About</Link>
+       <Link href={"/contact"} onClick={()=>Setopen(false)}>Contact</Link>
         <button className='bg-black text-white px-5 py-2 rounded-full
         hover:bg-gray-800 transition w-full'>Login</button>
       </div>
