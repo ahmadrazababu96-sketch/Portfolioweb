@@ -47,7 +47,7 @@ const Login = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8182E2] transition"
+              className="px-4 py-2 border bg-[#F2F3FF] text-black  rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8182E2] transition"
             />
           </motion.div>
 
@@ -62,7 +62,8 @@ const Login = () => {
             <input
               type="password"
               placeholder="Enter your password"
-              className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8182E2] transition"
+              className="px-4 py-2 border rounded-lg 
+              bg-[#F2F3FF] text-black focus:outline-none focus:ring-2 focus:ring-[#8182E2] transition"
             />
           </motion.div>
 
