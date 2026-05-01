@@ -21,7 +21,7 @@ const Navbar = () => {
       <Link href={"/"}>Home</Link>
       <Link href={"/projects"}>Project</Link>
       <Link href={"/about"}>About</Link>
-      <Link href={"/"}>Contact</Link>
+      <Link href={"/contact"}>Contact</Link>
     </div>
 
     <button className="bg-[#E040A0] text-white px-5 py-2 rounded-full hidden md:block hover:bg-gray-800 transition">
